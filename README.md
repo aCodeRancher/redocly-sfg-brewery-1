@@ -49,7 +49,6 @@ for more information.
 2. Add a file named as you wish to name the schema.
 3. Define the schema.
 4. Refer to the schema using the `$ref` (see example below).
-
 ##### Example Schema
 This is a very simple schema example:
 ```yaml
