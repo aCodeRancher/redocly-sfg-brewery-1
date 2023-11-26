@@ -21,7 +21,6 @@ Bundles the definition to the dist folder.
 
 #### `npm test`
 Validates the definition.
-
 ## Contribution Guide
 
 Below is a sample contribution guide. The tools
