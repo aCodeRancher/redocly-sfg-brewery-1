@@ -1,7 +1,0 @@
-name: beerId
-in: path
-description: Beer Id
-required: true
-schema:
-  type: string
-  format: uuid

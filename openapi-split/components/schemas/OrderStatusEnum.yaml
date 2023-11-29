@@ -1,7 +1,0 @@
-type: string
-enum:
-  - NEW
-  - VERIFIED
-  - ALLOCATED
-  - READY
-  - PICKED_UP
