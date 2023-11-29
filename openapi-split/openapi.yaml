@@ -1,0 +1,39 @@
+openapi: 3.1.0
+info:
+  version: '1.1'
+  title: SFG Brewery API
+  license:
+    name: GNU GPLv3
+    url: https://www.gnu.org/licenses/gpl.txt
+  contact:
+    name: John Thompson
+    url: https://springframework.guru
+servers:
+  - url: http://localhost:8080
+    description: Local Host
+  - url: http://api.springframework.guru
+    description: Demo API
+tags:
+  - name: Beer Service
+    description: Brewey Beer Operations
+  - name: Order Service
+    description: Brewery Order Operations
+security:
+  - {}
+paths:
+  /api/v1/beer:
+    $ref: paths/api_v1_beer.yaml
+  /api/v1/beer/{beerId}:
+    $ref: paths/api_v1_beer_{beerId}.yaml
+  /api/v1/beerUpc/{upc}:
+    $ref: paths/api_v1_beerUpc_{upc}.yaml
+  /api/v1/customers:
+    $ref: paths/api_v1_customers.yaml
+  /api/v1/customers/{customerId}:
+    $ref: paths/api_v1_customers_{customerId}.yaml
+  /api/v1/customers/{customerId}/orders:
+    $ref: paths/api_v1_customers_{customerId}_orders.yaml
+  /api/v1/customers/{customerId}/orders/{orderId}:
+    $ref: paths/api_v1_customers_{customerId}_orders_{orderId}.yaml
+  /api/v1/customers/{customerId}/orders/{orderId}/pickup:
+    $ref: paths/api_v1_customers_{customerId}_orders_{orderId}_pickup.yaml
