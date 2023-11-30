@@ -5,15 +5,15 @@ get:
   tags:
     - Beer Service
   parameters:
-    - $ref: ..\components\parameters\BeerId.yaml
-    - $ref: ..\components\parameters\ShowInventoryOnHand.yaml
+    - $ref: ../components/parameters/BeerId.yaml
+    - $ref: ../components/parameters/ShowInventoryOnHand.yaml
   responses:
     '200':
       description: Get Beer by id Response
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\Beer.yaml
+            $ref: ../components/schemas/Beer.yaml
     '404':
       description: Not Found
 put:
@@ -23,13 +23,13 @@ put:
   tags:
     - Beer Service
   parameters:
-    - $ref: ..\components\parameters\BeerId.yaml
+    - $ref: ../components/parameters/BeerId.yaml
   requestBody:
     required: true
     content:
       application/json:
         schema:
-          $ref: ..\components\schemas\Beer.yaml
+          $ref: ../components/schemas/Beer.yaml
   responses:
     '204':
       description: Beer Updated
@@ -46,7 +46,7 @@ delete:
   tags:
     - Beer Service
   parameters:
-    - $ref: ..\components\parameters\BeerId.yaml
+    - $ref: ../components/parameters/BeerId.yaml
   responses:
     '204':
       description: Delelted
