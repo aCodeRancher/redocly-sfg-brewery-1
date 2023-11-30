@@ -1,6 +1,6 @@
 type: object
 allOf:
-  - $ref: .\BaseItem.yaml
+  - $ref: ./BaseItem.yaml
 required:
   - upc
   - orderQuantity
