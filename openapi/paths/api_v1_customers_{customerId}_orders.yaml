@@ -1,7 +1,7 @@
 parameters:
-  - $ref: ..\components\parameters\CustomerId.yaml
-  - $ref: ..\components\parameters\Page.yaml
-  - $ref: ..\components\parameters\PageSize.yaml
+  - $ref: ../components/parameters/CustomerId.yaml
+  - $ref: ../components/parameters/Page.yaml
+  - $ref: ../components/parameters/PageSize.yaml
 get:
   description: List Orders
   summary: List Orders
@@ -14,7 +14,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\BeerOrderPagedList.yaml
+            $ref: ../components/schemas/BeerOrderPagedList.yaml
     '404':
       description: Not Found
 post:
@@ -28,7 +28,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\components\schemas\BeerOrder.yaml
+          $ref: ../components/schemas/BeerOrder.yaml
   responses:
     '201':
       description: Order Created
@@ -52,7 +52,7 @@ post:
         post:
           summary: Post back for order status change.
           requestBody:
-            $ref: ..\components\requestBodies\OrderStatusCallback.yaml
+            $ref: ../components/requestBodies/OrderStatusCallback.yaml
           responses:
             '200':
               description: Okay
