@@ -5,7 +5,7 @@ get:
   tags:
     - Beer Service
   parameters:
-    - $ref: ..\components\parameters\Page.yaml
+    - $ref: ../components/parameters/Page.yaml
     - $ref: ..\components\parameters\PageSize.yaml
     - $ref: ..\components\parameters\BeerName.yaml
     - $ref: ..\components\parameters\BeerStyle.yaml
