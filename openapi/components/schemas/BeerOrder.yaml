@@ -1,6 +1,6 @@
 type: object
 allOf:
-  - $ref: .\BaseItem.yaml
+  - $ref: ./BaseItem.yaml
 required:
   - customerId
 properties:
@@ -12,9 +12,9 @@ properties:
   beerOrderLines:
     type: array
     items:
-      $ref: .\BeerOrderLine.yaml
+      $ref: ./BeerOrderLine.yaml
   orderStatus:
-    $ref: .\OrderStatusEnum.yaml
+    $ref: ./OrderStatusEnum.yaml
   orderStatusCallbackUrl:
     type: string
     format: uri
