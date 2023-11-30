@@ -1,6 +1,6 @@
 type: object
 allOf:
-  - $ref: .\BaseItem.yaml
+  - $ref: ./BaseItem.yaml
 properties:
   orderId:
     type: string
@@ -8,4 +8,4 @@ properties:
   customerRef:
     type: string
   orderStatus:
-    $ref: .\OrderStatusEnum.yaml
+    $ref: ./OrderStatusEnum.yaml
