@@ -8,4 +8,4 @@ content:
           type: string
           format: uuid
         orderStatus:
-          $ref: ..\schemas\OrderStatusUpdate.yaml
+          $ref: ../schemas/OrderStatusUpdate.yaml
