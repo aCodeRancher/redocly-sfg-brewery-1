@@ -1,5 +1,5 @@
 parameters:
-  - $ref: ..\components\parameters\CustomerId.yaml
+  - $ref: ../components/parameters/CustomerId.yaml
 get:
   description: Get customer by Id
   summary: Get Customer by Id
@@ -12,7 +12,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\Customer.yaml
+            $ref: ../components/schemas/Customer.yaml
     '404':
       description: Not Found
 put:
@@ -22,13 +22,13 @@ put:
   tags:
     - Order Service
   parameters:
-    - $ref: ..\components\parameters\CustomerId.yaml
+    - $ref: ../components/parameters/CustomerId.yaml
   requestBody:
     required: true
     content:
       application/json:
         schema:
-          $ref: ..\components\schemas\Customer.yaml
+          $ref: ../components/schemas/Customer.yaml
   responses:
     '204':
       description: Beer Updated

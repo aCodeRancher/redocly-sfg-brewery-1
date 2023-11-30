@@ -1,6 +1,6 @@
 parameters:
-  - $ref: ..\components\parameters\CustomerId.yaml
-  - $ref: ..\components\parameters\OrderId.yaml
+  - $ref: ../components/parameters/CustomerId.yaml
+  - $ref: ../components/parameters/OrderId.yaml
 put:
   description: Pickup Order
   summary: Pickup Order

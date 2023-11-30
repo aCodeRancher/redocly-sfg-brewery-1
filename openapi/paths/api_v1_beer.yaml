@@ -5,18 +5,18 @@ get:
   tags:
     - Beer Service
   parameters:
-    - $ref: ..\components\parameters\Page.yaml
-    - $ref: ..\components\parameters\PageSize.yaml
-    - $ref: ..\components\parameters\BeerName.yaml
-    - $ref: ..\components\parameters\BeerStyle.yaml
-    - $ref: ..\components\parameters\ShowInventoryOnHand.yaml
+    - $ref: ../components/parameters/Page.yaml
+    - $ref: ../components/parameters/PageSize.yaml
+    - $ref: ../components/parameters/BeerName.yaml
+    - $ref: ../components/parameters/BeerStyle.yaml
+    - $ref: ../components/parameters/ShowInventoryOnHand.yaml
   responses:
     '200':
       description: List Beers Response
       content:
         application/json:
           schema:
-            $ref: ..\components\schemas\BeerPagedList.yaml
+            $ref: ../components/schemas/BeerPagedList.yaml
     '404':
       description: Not Found'
 post:
@@ -30,7 +30,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ..\components\schemas\Beer.yaml
+          $ref: ../components/schemas/Beer.yaml
   responses:
     '201':
       description: Create new beer response
