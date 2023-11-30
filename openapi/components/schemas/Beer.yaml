@@ -1,6 +1,6 @@
 type: object
 allOf:
-  - $ref: .\BaseItem.yaml
+  - $ref: ./BaseItem.yaml
 required:
   - beerName
   - beerStyle
@@ -10,7 +10,7 @@ properties:
   beerName:
     type: string
   beerStyle:
-    $ref: .\BeerStyleEnum.yaml
+    $ref: ./BeerStyleEnum.yaml
   upc:
     type: string
   quantityOnHand:
