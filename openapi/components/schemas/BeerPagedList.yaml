@@ -1,8 +1,8 @@
 type: object
 allOf:
-  - $ref: .\PagedResponse.yaml
+  - $ref: ./PagedResponse.yaml
 properties:
   content:
     type: array
     items:
-      $ref: .\Beer.yaml
+      $ref: ./Beer.yaml
