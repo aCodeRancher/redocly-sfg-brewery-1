@@ -2,9 +2,17 @@ openapi: 3.1.0
 info:
   version: '1.1'
   title: SFG Brewery API
+  description: |
+     # Heading 1 - This is the Brewery API Documentation
+     This is a paragraph for heading 1
+     ## Heading 2 - This is heading 2 
+
+     ### Heading  - This is heading 3
   license:
     name: GNU GPLv3
     url: https://www.gnu.org/licenses/gpl.txt
+  x-logo: 
+     url: https://springframework.guru/wp-content/uploads/2015/02/banner728BlackBackground.png  
   contact:
     name: John Thompson
     url: https://springframework.guru
@@ -13,9 +21,47 @@ servers:
     description: Local Host
   - url: http://api.springframework.guru
     description: Demo API
+x-tagGroups:
+   - name: Beer API Operations
+     tags:
+          - Beer Service
+   - name: Order API Operations
+     tags:
+          - Order Service  
+   - name: All APIs
+     tags:
+        - Beer Service
+        - Order Service
+
 tags:
   - name: Beer Service
-    description: Brewey Beer Operations
+    description: |
+      # Brewey Beer Operations
+      **This is description**
+      ## Heading 2
+      *This is heading 2 description here...*
+      ** My Ordered List **
+       1. Item 1
+       2. Item 2
+       3. Item 3
+       4. Item 4
+
+       ** My unordered list **
+       - Item 1
+       - Item 2
+       - Item 3
+
+       To complete the migration please use script `migratesh`.
+       #### Javascript Example
+        ```javascript
+            const query  = new URLSearchParams({
+
+            }).toString()
+        ```
+      ### Heading 3
+       The source code for this   
+      #### Source Code
+      The source code for this API specification [Github][https://github.com/springframeworkguru/redocly-sfg-brewery] 
   - name: Order Service
     description: Brewery Order Operations
 security:
