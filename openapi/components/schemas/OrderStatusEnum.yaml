@@ -5,3 +5,9 @@ enum:
   - ALLOCATED
   - READY
   - PICKED_UP
+x-enumDescriptions:
+  NEW: afdafda
+  VERIFIED: daf 
+  ALLOCATED: d da
+  READY: dadaf
+  PICKED_UP: dafda 

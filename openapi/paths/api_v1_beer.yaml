@@ -1,9 +1,10 @@
 get:
   description: List Beers
-  summary: List Beers
+  summary: List Beers 12345
   operationId: listBeers
   tags:
     - Beer Service
+  #x-hideTryItPanel: true 
   parameters:
     - $ref: ../components/parameters/Page.yaml
     - $ref: ../components/parameters/PageSize.yaml
