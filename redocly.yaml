@@ -2,11 +2,19 @@
 apis:
   sample@v1: 
     root: openapi/openapi.yaml
+  sample@v2:
+    root: openapi/openapiV2.yaml  
 extends:
   - recommended
 rules:
   no-unused-components: error
   operation-description: error
+  info-license: error
+decorators: 
+  filter-out:
+     property: x-audience
+     value: Internal
+     matchStrategy: any  
 theme:
   openapi:
     htmlTemplate: ./docs/index.html
